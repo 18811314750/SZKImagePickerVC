@@ -1,7 +1,7 @@
 # SZKImagePickerVC
 1.轻松实现调用照相机和本地图库，利用代理方法返回选中的照片。2.提供类方法，实现照片保存到沙盒，以及从沙盒中读取保存的图片。
 
-详细文档请查看 简书：http://www.jianshu.com/p/7ffc8844e956
+详细文档请查看 http://www.jianshu.com/p/7ffc8844e956
 
 SZKImagePickerVC.h
 
@@ -115,6 +115,6 @@ SZKImagePickerVC.m中
 
 ```
 
-详细文档请查看 简书：http://www.jianshu.com/p/7ffc8844e956
+详细文档请查看 http://www.jianshu.com/p/7ffc8844e956
 
 
