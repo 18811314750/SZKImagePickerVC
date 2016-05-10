@@ -15,6 +15,7 @@
 		8A992E361CE1B482006ABD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A992E341CE1B482006ABD8C /* LaunchScreen.storyboard */; };
 		8A992E411CE1B482006ABD8C /* SaveImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A992E401CE1B482006ABD8C /* SaveImageTests.m */; };
 		8A992E4C1CE1B482006ABD8C /* SaveImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A992E4B1CE1B482006ABD8C /* SaveImageUITests.m */; };
+		8A992E5B1CE1B490006ABD8C /* SZKImagePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A992E5A1CE1B490006ABD8C /* SZKImagePickerVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8A992E471CE1B482006ABD8C /* SaveImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A992E4B1CE1B482006ABD8C /* SaveImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveImageUITests.m; sourceTree = "<group>"; };
 		8A992E4D1CE1B482006ABD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A992E591CE1B490006ABD8C /* SZKImagePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZKImagePickerVC.h; sourceTree = "<group>"; };
+		8A992E5A1CE1B490006ABD8C /* SZKImagePickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZKImagePickerVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		8A992E1A1CE1B482006ABD8C = {
 			isa = PBXGroup;
 			children = (
+				8A992E5C1CE1BDF5006ABD8C /* SZKImagePickerVC */,
 				8A992E251CE1B482006ABD8C /* SaveImage */,
 				8A992E3F1CE1B482006ABD8C /* SaveImageTests */,
 				8A992E4A1CE1B482006ABD8C /* SaveImageUITests */,
@@ -138,6 +142,15 @@
 				8A992E4D1CE1B482006ABD8C /* Info.plist */,
 			);
 			path = SaveImageUITests;
+			sourceTree = "<group>";
+		};
+		8A992E5C1CE1BDF5006ABD8C /* SZKImagePickerVC */ = {
+			isa = PBXGroup;
+			children = (
+				8A992E591CE1B490006ABD8C /* SZKImagePickerVC.h */,
+				8A992E5A1CE1B490006ABD8C /* SZKImagePickerVC.m */,
+			);
+			name = SZKImagePickerVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					8A992E221CE1B482006ABD8C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = EDPVC8D76U;
 					};
 					8A992E3B1CE1B482006ABD8C = {
 						CreatedOnToolsVersion = 7.3;
@@ -273,6 +287,7 @@
 				8A992E2E1CE1B482006ABD8C /* ViewController.m in Sources */,
 				8A992E2B1CE1B482006ABD8C /* AppDelegate.m in Sources */,
 				8A992E281CE1B482006ABD8C /* main.m in Sources */,
+				8A992E5B1CE1B490006ABD8C /* SZKImagePickerVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SaveImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---.SaveImage";
+				PRODUCT_BUNDLE_IDENTIFIER = "-5306";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +444,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SaveImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---.SaveImage";
+				PRODUCT_BUNDLE_IDENTIFIER = "-5306";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
